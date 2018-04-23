@@ -1,5 +1,5 @@
-const Koa = require('koa')
-const app = new Koa()
+const Koa = require('koa');
+const app = new Koa();
 
 app.use( async ( ctx ) => {
 
@@ -16,10 +16,10 @@ app.use( async ( ctx ) => {
         httpOnly: false,  // 是否只用于http请求中获取
         overwrite: false  // 是否允许重写
       }
-    )
-    ctx.body = 'cookie is ok'
+    );
+    ctx.body = 'cookie is ok';
   } else {
-    ctx.body = 'hello world' 
+    ctx.body = 'hello world';
   }
 
 })

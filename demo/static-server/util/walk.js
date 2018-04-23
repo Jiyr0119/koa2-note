@@ -1,5 +1,5 @@
-const fs = require('fs')
-const mimes = require('./mimes')
+const fs = require('fs');
+const mimes = require('./mimes');
 
 /**
  * 遍历读取目录内容（子目录，文件名）
@@ -7,9 +7,7 @@ const mimes = require('./mimes')
  * @return {array} 目录内容列表
  */
 function walk( reqPath ){
-
   let files = fs.readdirSync( reqPath );
-
   let dirList = [], fileList = [];
   for( let i=0, len=files.length; i<len; i++ ) {
     let item = files[i];

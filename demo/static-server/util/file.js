@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs');
 
 /**
  * 读取文件方法
@@ -7,8 +7,8 @@ const fs = require('fs')
  */
 function file ( filePath ) {
 
- let content = fs.readFileSync(filePath, 'binary' )
+ let content = fs.readFileSync(filePath, 'binary' );
  return content
 }
 
-module.exports = file
+module.exports = file;

@@ -20,4 +20,4 @@ let mimes = {
   'xml': 'text/xml'
 }
 
-module.exports = mimes
+module.exports = mimes;
